@@ -7,13 +7,16 @@
     box-sizing: border-box;
 }
 body{
-    background-color: lightblue;
+    /* background-color: #0e1525; */
+    background-image: url('images/kayitz.png');
     font-family: 'Roboto', sans-serif;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .nav-items{
     display: flex;
@@ -24,38 +27,20 @@ body{
     font-size: 25px;
     color: #0984e3;
 }
-.nav-items .nav-item{
-    list-style: none;
-    display: flex;
-    gap: 10px;
+.part-end div{
+    border: 1px solid #0984e3;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
 }
-.nav-items .nav-link{
+.part-end div:hover{
+    background-color: #0984e3;
+}
+.part-end a{
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-}
-.nav-link:hover{
-    color: #0984e3;
-    cursor: pointer;
-}
-.connexion{
-    background-color: #0984e3;
-    padding: 5px;
-    border-radius: 5px;
-    color: #fff;
-}
-.connexion:hover{
-    color: #fff;
-}
-.inscription{
-    border: 1px solid #0984e3;
-    padding: 5px;
-    border-radius: 5px;
-}
-.inscription:hover{
-   background-color: #0984e3;
-   color: #fff;
 }
 .container .navbar-brand img{
   width: 200px;
@@ -65,15 +50,232 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    /* background-image: url('images/Prise\ de\ Contact\ \(2\)[846].png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
 }
-.img img{
-    width: 500px;
+.propos img{
+    /* width: 500px; */
+    width: 200px;
+   
 }
-.text{
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.test h1{
+    color: #0984e3;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.test img{
+    width: 600px;
+}
+.test h3{
+    display: inline-block;
+    font-weight:bold ;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    background: linear-gradient(-224deg, #778ec3 0%, #337DFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px #0e1525;
+    /* margin-left: -120px; */
+}
+/* aida */
+.form-control{
+    width: 300px;
+}
+input::placeholder{
     color: #fff;
-    padding: 30px;
-    margin-left: 110px ;
 }
-.text h1{
-    /* font-size: 60px; */
+
+.connexion{ 
+    max-width: 500px;
+    margin-top: 80px;
+    padding: 50px;
+
 }
+input{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+#submit{
+    background-color: #0984e3;
+    border: none;
+    color: #fff;
+}
+#submit:hover{
+    background-color: #fff;
+    
+    color:#0984e3 ;
+}
+#create{
+    border: none;
+    background-color: #0984e3;
+    color: #fff;
+}
+.input{
+    position: relative;
+}
+.fa-lock{
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.fa-user-o{
+    right: 0;
+    bottom: 15px;
+}
+/* deguene */
+.card img{
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card{
+    box-shadow: 10px 10px 10px #0e1525;
+}
+
+.card:hover{
+    box-shadow: 0px 2px 70px rgb(253 71 102/5%);
+    transform: translateY(-5px);
+}
+/* CONTACT */
+.contact{
+    margin-top: 100px;
+   
+}
+.contact1{
+    background-color: #fff;
+   
+  
+}
+.contact h1{
+    color: #0984e3;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.form input{
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 100%;
+}
+.form input::placeholder{
+    color: #0984e3;
+}
+#contact-submit{
+    width: 150px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+}
+.picture img{
+    object-fit: cover;
+    height: 100%;
+}
+.picture{
+    position: relative;
+}
+.picture p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+#message{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#message::placeholder{
+    color: #0984e3;
+}
+#submit3{
+    background-color: #0984e3;
+    width: 150px;
+    border: 1px solid #0984e3;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-area textarea::placeholder{
+    color: #0984e3;
+}
+.infos-contact{
+    margin-top: 50px;
+}
+.icon{
+    background-color: #0984e3;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.icon .fa::before{
+    color: #fff;
+}
+/* rdv */
+form h4{
+    font-size: 16px;
+}
+.inscription{
+    color: #0984e3;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.inscription h1{
+    color: #fff
+}
+.form::placeholder{
+    color:#000;
+}
+#soumettre{
+    background-color: #0984e3;
+    width: 300px;
+    color: #fff;
+    border: none;
+}
+#soumettre:hover{
+    background-color: #fff;
+    color: #0984e3;
+}
+#select{
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-subscribe{
+    background-color: #0984e3;
+    color: #fff;
+    margin-top: 20px;
+}
+.social{
+    /* background-color: #f8f9fa; */
+    padding: 50px;
+}
+.social h1{
+    color: #0984e3;
+    margin-bottom: 30px;
+}
+.social img{
+    width: 80px;
+    transition: 0.65s;
+}
+.social img:hover{
+    transform: translateY(-10px);
+}
+
